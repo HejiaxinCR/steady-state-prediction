@@ -84,7 +84,7 @@ conda activate pemfc-inverse
 cd '<你的项目根目录>\inverse_prediction'
 
 python '.\batch_predict.py' `
-  --input '.\data\opcon_V1_83p1_300p8_480p8_converted.csv' `
+  --input '.\data\opcon_V2_83p1_300p8_480p8_converted.csv' `
   --output '.\outputs\batch_predictions\opcon_predictions.csv' `
   --device cpu
 ```
@@ -141,9 +141,9 @@ RH_ano_out_maxlim,RH_cat_out_maxlim
 
 ```powershell
 python '.\batch_predict.py' `
-  --input 'data\opcon_V1_83p1_300p8_480p8_converted.csv' `
-  --output 'outputs\batch_predictions\opcon_V1_83p1_300p8_480p8_converted_predictions.csv' `
-  --summary 'outputs\batch_predictions\opcon_V1_83p1_300p8_480p8_converted_summary.csv' `
+  --input 'data\opcon_V2_83p1_300p8_480p8_converted.csv' `
+  --output 'outputs\batch_predictions\opcon_V2_83p1_300p8_480p8_converted_predictions.csv' `
+  --summary 'outputs\batch_predictions\opcon_V2_83p1_300p8_480p8_converted_summary.csv' `
   --device cpu
 ```
 
@@ -206,7 +206,7 @@ pred_sa = max(pred_sa, 0)
 
 ```powershell
 python '.\batch_predict.py' `
-  --input 'data\opcon_V1_83p1_300p8_480p8_converted.csv' `
+  --input 'data\opcon_V2_83p1_300p8_480p8_converted.csv' `
   --output 'outputs\batch_predictions\opcon_predictions.csv' `
   --fr-cl-by-current '83:0.015,300:0.02,480:0.03' `
   --device cpu
