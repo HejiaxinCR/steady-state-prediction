@@ -380,7 +380,7 @@ class InverseOptimizer:
         return feature_table.loc[mask].copy()
 
     @staticmethod
-    def save_outputs(result, output_dir=Path("inverse_prediction/outputs")):
+    def save_outputs(result, output_dir=Path(__file__).resolve().parent / "outputs"):
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 

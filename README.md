@@ -1,4 +1,4 @@
-# Inverse Prediction 使用说明
+# Steady-state Prediction 使用说明
 
 本目录包含两个主要入口：
 
@@ -78,10 +78,10 @@ conda activate pemfc-inverse
 
 ## 路径约定
 
-下面的示例命令都假设先进入当前脚本目录 `inverse_prediction/`：
+下面的示例命令都假设先进入当前脚本目录 `steady-state prediction/`。目录名包含空格，命令中的路径需要用引号包裹：
 
 ```powershell
-cd '<你的项目根目录>\inverse_prediction'
+cd '<你的项目根目录>\steady-state prediction'
 
 python '.\batch_predict.py' `
   --input '.\data\opcon_V2_83p1_300p8_480p8_converted.csv' `
@@ -101,7 +101,7 @@ python '.\run_inverse_optimization.py' `
 
 ## 模型文件
 
-脚本默认会自动查找 `module_value/` 或 `inverse_prediction/module_value/`，并加载以下模型产物：
+脚本默认会自动查找 `module_value/` 或 `steady-state prediction/module_value/`，并加载以下模型产物：
 
 - `mlp_surrogate_state_dict.pt`
 - `normalizer_x.pkl`

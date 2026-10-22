@@ -293,7 +293,7 @@ def parse_args():
         "--output",
         help=(
             "Output CSV path for a single input file, or output folder for folder input. "
-            "Default: inverse_prediction/outputs/batch_predictions."
+            "Default: steady-state prediction/outputs/batch_predictions."
         ),
     )
     parser.add_argument("--summary", help="Optional path for the batch summary CSV.")
